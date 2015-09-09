@@ -2,22 +2,28 @@
   "author": "Jacob Lowe <jacoblowe2.0@gmail.com> (jacoblowe.me)",
   "name": "geode",
   "description": "wrapper for www.geonames.org api",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "repository": "jacoblwe20/geode",
-  "scripts" : {
-    "test" : "mocha ./spec/geode_spec.js"
+  "scripts": {
+    "test": "standard && mocha ./spec/geode_spec.js"
   },
   "main": "geode.js",
   "engines": {
-    "node": "<=0.10"
+    "node": "<=0.12"
   },
   "dependencies": {
-    "request" : "^2.53.0"
+    "request": "^2.53.0"
   },
   "devDependencies": {
-      "mocha": "*",
-      "should": "*",
-      "underscore": "*"
+    "mocha": "*",
+    "should": "*",
+    "standard": "^2.10.0",
+    "underscore": "*"
+  },
+  "standard": {
+    "ignore": [
+      "spec/*"
+    ]
   },
   "optionalDependencies": {}
 }
